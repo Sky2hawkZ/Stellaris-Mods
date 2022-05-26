@@ -1,0 +1,17 @@
+@standard_construction_time = 360;
+hoi_building_1 = {
+	icon = "GFX_orbitalring_mineral_hub"
+	construction_days = @standard_construction_time
+
+	potential = {
+		exists = owner
+		owner = {
+			has_technology = tech_mineral_purification_2
+		}
+		is_orbital_ring = yes
+	}
+
+	planet_modifier = {
+		planet
+	}
+}
